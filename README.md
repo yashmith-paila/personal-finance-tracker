@@ -1,13 +1,20 @@
-FinTrack - Personal Finance Management System
+# FinTrack - Personal Finance Management System
+
 FinTrack is a comprehensive full-stack application designed to help users track their personal finances, manage transactions, set financial goals, and visualize their spending habits.
 
-🚀 Tech Stack
-Frontend: React.js, Vite, Tailwind CSS, Redux Toolkit
-Backend: Node.js, Express.js
-Database: MongoDB (implied by models)
-State Management: Redux Toolkit
-Authentication: JWT (JSON Web Tokens)
-📁 Project Structure
+## 🚀 Tech Stack
+
+- **Frontend:** React.js, Vite, Tailwind CSS, Redux Toolkit
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (implied by models)
+- **State Management:** Redux Toolkit
+- **Authentication:** JWT (JSON Web Tokens)
+
+---
+
+## 📁 Project Structure
+
+```text
 my proj/
 ├── fintrack/               # Main application directory
 │   ├── client/             # Frontend React application (Vite-based)
@@ -32,36 +39,53 @@ my proj/
 │
 ├── .gitignore              # Global git ignore file
 └── README.md               # Project documentation (this file)
-⚙️ How it Works
-Backend (Server):
+```
 
-The server is built with Node.js and Express.
-It uses Mongoose/MongoDB to store user data, transactions, and goals.
-JWT is used for secure authentication.
-There are specialized services (like aiService.js) to provide intelligent financial insights.
-Frontend (Client):
+---
 
-The client is a modern React SPA (Single Page Application) built with Vite.
-Redux Toolkit handles global state management, ensuring a smooth and responsive UI.
-Tailwind CSS provides a modern, responsive design with premium aesthetics.
-Axios is used for communication between the frontend and the backend API.
-🛠️ Getting Started
-Prerequisites
-Node.js (v18 or higher)
-MongoDB account or local instance
-Installation
-Clone the repository:
+## ⚙️ How it Works
 
-git clone <repository-url>
-Setup Backend:
+1.  **Backend (Server):** 
+    - The server is built with **Node.js and Express**.
+    - It uses **Mongoose/MongoDB** to store user data, transactions, and goals.
+    - **JWT** is used for secure authentication. 
+    - There are specialized **services** (like `aiService.js`) to provide intelligent financial insights.
 
-cd fintrack/server
-npm install
-# Create a .env file based on .env.example
-npm start
-Setup Frontend:
+2.  **Frontend (Client):**
+    - The client is a modern **React SPA** (Single Page Application) built with **Vite**.
+    - **Redux Toolkit** handles global state management, ensuring a smooth and responsive UI.
+    - **Tailwind CSS** provides a modern, responsive design with premium aesthetics.
+    - **Axios** is used for communication between the frontend and the backend API.
 
-cd fintrack/client
-npm install
-# Create a .env file
-npm run dev
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB account or local instance
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    ```
+
+2.  **Setup Backend:**
+    ```bash
+    cd fintrack/server
+    npm install
+    # Create a .env file based on .env.example
+    npm start
+    ```
+
+3.  **Setup Frontend:**
+    ```bash
+    cd fintrack/client
+    npm install
+    # Create a .env file
+    npm run dev
+    ```
+
+---
